@@ -1,0 +1,186 @@
+---
+title: Scraft Changelog
+description: Stay updated with the latest releases, features, and improvements in Scraft.
+---
+
+## Latest Releases
+
+<Update label="2024-10-15" description="v2.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces
+- Introduced advanced search with full-text indexing across all projects
+
+## Improvements
+
+- Enhanced MDX rendering performance by 40%
+- Better mobile responsiveness for documentation previews
+
+## Bug Fixes
+
+- Fixed rendering issues with nested code blocks in MDX files
+- Resolved synchronization errors during multi-user edits
+
+</Update>
+
+<Update label="2024-09-20" description="v2.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Complete rewrite of the editor with Monaco integration
+- Custom themes and brand color support (e.g., `#EE964B` for Scraft)
+
+## Breaking Changes
+
+- Updated configuration format from YAML to JSON for better compatibility
+- Removed legacy shortcode syntax in favor of native MDX components
+
+## Bug Fixes
+
+- Patched security vulnerability in public space sharing
+- Improved error handling for malformed documentation files
+
+</Update>
+
+<Update label="2024-08-10" description="v1.5.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Optimized asset loading for images and embeds
+- Added keyboard shortcuts for faster navigation
+
+## Bug Fixes
+
+- Corrected table rendering alignment issues
+- Fixed export to PDF functionality on large documents
+
+</Update>
+
+## Upcoming Roadmap
+
+<Columns cols={3}>
+
+<Card title="AI-Powered Editing" icon="zap" href="/docs/ai-features">
+
+Coming soon: Auto-generate documentation from code comments and suggest improvements.
+
+</Card>
+
+<Card title="Version Control" icon="git-branch" href="/docs/version-control">
+
+Native Git integration for seamless branching and merging.
+
+</Card>
+
+<Card title="Analytics Dashboard" icon="bar-chart-3" href="/docs/analytics">
+
+Track documentation views, engagement, and popular sections.
+
+</Card>
+
+</Columns>
+
+<Callout kind="tip">
+
+Subscribe to our newsletter or follow `@scraft_docs` on social media to get notified about new releases.
+
+</Callout>
+
+## How to Update
+
+<Steps>
+
+<Step title="Check Current Version" icon="package">
+
+Run the version check command to see your installed version.
+
+<CodeGroup tabs="npm,yarn">
+
+````bash
+npm list scraft
+````
+
+````bash
+yarn list scraft
+````
+
+</CodeGroup>
+
+</Step>
+
+<Step title="Update Package" icon="upload">
+
+Install the latest version using your preferred package manager.
+
+<CodeGroup>
+
+````bash
+npm install scraft@latest
+````
+
+````bash
+yarn add scraft@latest
+````
+
+</CodeGroup>
+
+</Step>
+
+<Step title="Restart Server" icon="refresh-cw">
+
+Restart your Scraft development server to apply changes.
+
+````bash
+npm run dev
+# or
+yarn dev
+````
+
+</Step>
+
+<Step title="Verify Update" icon="check-circle">
+
+Confirm the new version is active and test your documentation spaces.
+
+</Step>
+
+</Steps>
+
+## Migration Notes
+
+<ExpandableGroup>
+
+<Expandable title="Migrating from v1.x to v2.0" default-open="true">
+
+If you're upgrading from v1.x, update your config files from YAML to JSON format:
+
+````json
+{
+  "brandColor": "#EE964B",
+  "spaces": [
+    {
+      "name": "default",
+      "path": "./docs"
+    }
+  ]
+}
+````
+
+Test thoroughly after migration, especially shared spaces.
+
+</Expandable>
+
+<Expandable title="Handling Breaking Changes">
+
+Review deprecated shortcodes and replace with standard MDX components like `<Callout>` or `<Steps>`.
+
+<Callout kind="alert">
+
+Backup your documentation before applying updates.
+
+</Callout>
+
+</Expandable>
+
+</ExpandableGroup>

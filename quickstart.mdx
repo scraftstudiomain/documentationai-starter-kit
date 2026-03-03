@@ -1,0 +1,121 @@
+---
+title: Getting Started with Scraft
+description: Set up your Scraft account and create your first documentation space in just a few minutes.
+---
+
+<Callout kind="info" title="Prerequisites">
+Before you begin, ensure you have:
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for content import
+</Callout>
+
+## Sign Up and Log In
+
+Create your Scraft account to access the documentation platform.
+
+<Steps>
+  <Step title="Visit Scraft Dashboard" icon="monitor">
+    Open your browser and navigate to `https://app.scraft.com`.
+
+    Click **Sign Up** in the top right corner.
+  </Step>
+
+  <Step title="Register Account" icon="user-plus">
+    Enter your email, create a password, and provide your name.
+
+    Verify your email by clicking the link sent to your inbox.
+  </Step>
+
+  <Step title="Log In" icon="log-in">
+    Return to `https://app.scraft.com` and sign in with your credentials.
+
+    You'll land on the main dashboard.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Set up a new project to organize your docs.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Documentation Space**.
+
+    Enter a name like `My Project Docs` and select a starter template.
+  </Step>
+
+  <Step title="Configure Basics" icon="settings">
+    Choose your brand color (e.g., `#EE964B`) and add a description.
+
+    Click **Create** to generate the space.
+  </Step>
+</Steps>
+
+## Basic Interface Tour
+
+Explore the key areas of the Scraft interface.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor-section">
+    Write and preview MDX content in real-time.
+  </Card>
+
+  <Card title="Pages" icon="file-text" href="#pages-section">
+    Manage your documentation hierarchy and navigation.
+  </Card>
+
+  <Card title="Settings" icon="sliders" href="#settings-section">
+    Customize themes, SEO, and integrations.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Editor Features" default-open="true">
+  The editor supports live preview, syntax highlighting, and component autocompletion. Use the sidebar for file tree navigation.
+</Expandable>
+
+## Import Initial Content
+
+Populate your space quickly with existing content.
+
+<Tabs>
+  <Tab title="Manual Upload" icon="upload">
+    Drag and drop MDX files into the **Import** section.
+
+    <CodeGroup tabs="MDX Example">
+    ````mdx
+    ## Welcome
+
+    This is your first page.
+    ````
+
+    ````mdx
+    <Callout kind="success">Import complete!</Callout>
+    ````
+    </CodeGroup>
+  </Tab>
+
+  <Tab title="GitHub Repo" icon="github">
+    Connect your GitHub account via **Integrations > GitHub**.
+
+    Select a repo and import all markdown/MDX files automatically.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Start with 3-5 pages for a minimal viable docs site. Use the search bar to navigate.
+</Callout>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Customize Your Docs" icon="brush" href="/introduction">
+    Learn advanced features and branding.
+  </Card>
+
+  <Card title="API Integration" icon="zap" href="/authentication">
+    Add authentication for private docs.
+  </Card>
+</Columns>
+
+Congratulations! You've set up Scraft and created your first documentation space. Explore the editor to add more content.
